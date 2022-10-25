@@ -11,15 +11,6 @@ import Combine
 extension ContentView {
   final class ViewModel: ObservableObject, LifeCycleHandlerProtocol {
 
-    
-    enum Action {
-      
-    }
-    
-    enum State {
-      
-    }
-
     private var cancellables: Set<AnyCancellable> = []
     let lifeCycle = PassthroughSubject<LifeCycle, Never>()
     

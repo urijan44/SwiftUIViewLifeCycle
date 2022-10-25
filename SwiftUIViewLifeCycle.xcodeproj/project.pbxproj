@@ -15,6 +15,7 @@
 		8A2B240B2908467700376961 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B240A2908467700376961 /* ContentViewController.swift */; };
 		8A2B240F290846F000376961 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B240E290846F000376961 /* NiblessViewController.swift */; };
 		8A2B2411290849CD00376961 /* GatewayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B2410290849CD00376961 /* GatewayView.swift */; };
+		8A2B2416290856EC00376961 /* LifeCycleViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B2415290856EC00376961 /* LifeCycleViewModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		8A2B240A2908467700376961 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
 		8A2B240E290846F000376961 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
 		8A2B2410290849CD00376961 /* GatewayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayView.swift; sourceTree = "<group>"; };
+		8A2B2415290856EC00376961 /* LifeCycleViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeCycleViewModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				8A2B240E290846F000376961 /* NiblessViewController.swift */,
+				8A2B2415290856EC00376961 /* LifeCycleViewModifier.swift */,
 			);
 			path = ReuseableView;
 			sourceTree = "<group>";
@@ -169,6 +172,7 @@
 				8A2B2411290849CD00376961 /* GatewayView.swift in Sources */,
 				8A2B24092908465400376961 /* ViewModel.swift in Sources */,
 				8A2B240F290846F000376961 /* NiblessViewController.swift in Sources */,
+				8A2B2416290856EC00376961 /* LifeCycleViewModifier.swift in Sources */,
 				8A2B23FB2908464200376961 /* SwiftUIViewLifeCycleApp.swift in Sources */,
 				8A2B240B2908467700376961 /* ContentViewController.swift in Sources */,
 			);

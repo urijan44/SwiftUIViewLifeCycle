@@ -7,12 +7,11 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
   @ObservedObject private var viewModel: ViewModel
   var body: some View {
     VStack(spacing: 0) {
-      LifeCycleController.Representable(handler: viewModel)
-        .frame(height: .zero)
       Image(systemName: "globe")
         .imageScale(.large)
         .foregroundColor(.accentColor)
@@ -24,6 +23,7 @@ struct ContentView: View {
           print("ContentView on Disappear")
         }
     }
+    .lifeCycle(handler: viewModel)
     .padding()
   }
   
