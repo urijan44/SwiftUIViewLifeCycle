@@ -11,6 +11,10 @@
 		8A2B23FD2908464200376961 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B23FC2908464200376961 /* ContentView.swift */; };
 		8A2B23FF2908464300376961 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B23FE2908464300376961 /* Assets.xcassets */; };
 		8A2B24022908464300376961 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A2B24012908464300376961 /* Preview Assets.xcassets */; };
+		8A2B24092908465400376961 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B24082908465400376961 /* ViewModel.swift */; };
+		8A2B240B2908467700376961 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B240A2908467700376961 /* ContentViewController.swift */; };
+		8A2B240F290846F000376961 /* NiblessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B240E290846F000376961 /* NiblessViewController.swift */; };
+		8A2B2411290849CD00376961 /* GatewayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A2B2410290849CD00376961 /* GatewayView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +23,10 @@
 		8A2B23FC2908464200376961 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		8A2B23FE2908464300376961 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8A2B24012908464300376961 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		8A2B24082908465400376961 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		8A2B240A2908467700376961 /* ContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
+		8A2B240E290846F000376961 /* NiblessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NiblessViewController.swift; sourceTree = "<group>"; };
+		8A2B2410290849CD00376961 /* GatewayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GatewayView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +60,9 @@
 			isa = PBXGroup;
 			children = (
 				8A2B23FA2908464200376961 /* SwiftUIViewLifeCycleApp.swift */,
-				8A2B23FC2908464200376961 /* ContentView.swift */,
+				8A2B2410290849CD00376961 /* GatewayView.swift */,
+				8A2B240D290846E100376961 /* ReuseableView */,
+				8A2B240C290846CF00376961 /* ContentView */,
 				8A2B23FE2908464300376961 /* Assets.xcassets */,
 				8A2B24002908464300376961 /* Preview Content */,
 			);
@@ -65,6 +75,24 @@
 				8A2B24012908464300376961 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		8A2B240C290846CF00376961 /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B23FC2908464200376961 /* ContentView.swift */,
+				8A2B24082908465400376961 /* ViewModel.swift */,
+				8A2B240A2908467700376961 /* ContentViewController.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		8A2B240D290846E100376961 /* ReuseableView */ = {
+			isa = PBXGroup;
+			children = (
+				8A2B240E290846F000376961 /* NiblessViewController.swift */,
+			);
+			path = ReuseableView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +166,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A2B23FD2908464200376961 /* ContentView.swift in Sources */,
+				8A2B2411290849CD00376961 /* GatewayView.swift in Sources */,
+				8A2B24092908465400376961 /* ViewModel.swift in Sources */,
+				8A2B240F290846F000376961 /* NiblessViewController.swift in Sources */,
 				8A2B23FB2908464200376961 /* SwiftUIViewLifeCycleApp.swift in Sources */,
+				8A2B240B2908467700376961 /* ContentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
