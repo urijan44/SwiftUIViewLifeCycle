@@ -11,7 +11,7 @@ struct ContentView: View {
   @ObservedObject private var viewModel: ViewModel
   var body: some View {
     VStack(spacing: 0) {
-      Controller.Representable(viewModel: viewModel)
+      LifeCycleController.Representable(handler: viewModel)
         .frame(height: .zero)
       Image(systemName: "globe")
         .imageScale(.large)
@@ -29,12 +29,6 @@ struct ContentView: View {
   
   init(viewModel: ViewModel) {
     self.viewModel = viewModel
-  }
-}
-
-struct SomeDepth: View {
-  var body: some View {
-    Text("Depth")
   }
 }
 

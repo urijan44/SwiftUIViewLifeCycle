@@ -9,14 +9,8 @@ import SwiftUI
 import Combine
 
 extension ContentView {
-  final class ViewModel: ObservableObject {
-    enum LifeCycle {
-      case viewDidLoad
-      case viewWillAppaer
-      case viewDidAppear
-      case viewWillDisappear
-      case viewDidDisappear
-    }
+  final class ViewModel: ObservableObject, LifeCycleHandlerProtocol {
+
     
     enum Action {
       
@@ -25,8 +19,7 @@ extension ContentView {
     enum State {
       
     }
-    
-    private weak var controller: ContentView.Controller?
+
     private var cancellables: Set<AnyCancellable> = []
     let lifeCycle = PassthroughSubject<LifeCycle, Never>()
     
@@ -55,11 +48,7 @@ extension ContentView {
           return
       }
     }
-    
-    func setController(_ controller: ContentView.Controller) {
-      self.controller = controller
-    }
-    
+        
     deinit {
       print(self, #function)
     }
