@@ -20,27 +20,27 @@ extension ContentView {
     
     override func viewDidLoad() {
       super.viewDidLoad()
-      print(self, #function)
+      viewModel?.lifeCycle.send(.viewDidLoad)
     }
     
     override func viewWillAppear(_ animated: Bool) {
       super.viewWillAppear(animated)
-      print(self, #function)
+      viewModel?.lifeCycle.send(.viewWillAppaer)
     }
     
     override func viewDidAppear(_ animated: Bool) {
       super.viewDidAppear(animated)
-      print(self, #function)
+      viewModel?.lifeCycle.send(.viewDidAppear)
     }
     
     override func viewWillDisappear(_ animated: Bool) {
       super.viewWillDisappear(animated)
-      print(self, #function)
+      viewModel?.lifeCycle.send(.viewWillDisappear)
     }
     
     override func viewDidDisappear(_ animated: Bool) {
       super.viewDidDisappear(animated)
-      print(self, #function)
+      viewModel?.lifeCycle.send(.viewDidDisappear)
     }
     
     deinit {

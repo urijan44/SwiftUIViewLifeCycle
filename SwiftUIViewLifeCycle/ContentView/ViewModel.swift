@@ -27,6 +27,34 @@ extension ContentView {
     }
     
     private weak var controller: ContentView.Controller?
+    private var cancellables: Set<AnyCancellable> = []
+    let lifeCycle = PassthroughSubject<LifeCycle, Never>()
+    
+    init() {
+      bind()
+    }
+    
+    private func bind() {
+      lifeCycle
+        .sink(receiveValue: lifeCycleHandling(_:))
+        .store(in: &cancellables)
+    }
+    
+    private func lifeCycleHandling(_ lifeCycle: LifeCycle) {
+      print(lifeCycle)
+      switch lifeCycle {
+        case .viewDidLoad:
+          return
+        case .viewWillAppaer:
+          return
+        case .viewDidAppear:
+          return
+        case .viewWillDisappear:
+          return
+        case .viewDidDisappear:
+          return
+      }
+    }
     
     func setController(_ controller: ContentView.Controller) {
       self.controller = controller

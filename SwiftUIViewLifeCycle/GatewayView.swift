@@ -15,9 +15,6 @@ struct GatewayView: View {
       } label: {
         Text("다음")
       }
-      .viewWillDisappear {
-        print("viewWillDisappear")
-      }
     }
   }
 }
