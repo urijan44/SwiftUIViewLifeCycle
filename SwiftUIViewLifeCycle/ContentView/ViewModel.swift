@@ -20,7 +20,9 @@ extension ContentView {
     
     private func bind() {
       lifeCycle
-        .sink(receiveValue: lifeCycleHandling(_:))
+        .sink(receiveValue: { [weak self] lifeCylce in
+          self?.lifeCycleHandling(lifeCylce)
+        })
         .store(in: &cancellables)
     }
     

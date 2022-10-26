@@ -11,7 +11,7 @@ struct GatewayView: View {
   var body: some View {
     NavigationStack {
       NavigationLink {
-        ContentView(viewModel: ContentView.ViewModel())
+        ContentView()
       } label: {
         Text("다음")
       }

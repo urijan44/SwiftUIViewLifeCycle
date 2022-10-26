@@ -9,7 +9,7 @@ import SwiftUI
 
 
 struct ContentView: View {
-  @ObservedObject private var viewModel: ViewModel
+  @StateObject private var viewModel = ViewModel()
   var body: some View {
     VStack(spacing: 0) {
       Image(systemName: "globe")
@@ -26,14 +26,10 @@ struct ContentView: View {
     .lifeCycle(handler: viewModel)
     .padding()
   }
-  
-  init(viewModel: ViewModel) {
-    self.viewModel = viewModel
-  }
 }
 
 struct ContentView_Previews: PreviewProvider {
   static var previews: some View {
-    ContentView(viewModel: ContentView.ViewModel())
+    ContentView()
   }
 }
