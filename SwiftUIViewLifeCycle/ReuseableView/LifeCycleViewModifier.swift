@@ -13,6 +13,7 @@ struct LifeCycleModifier: ViewModifier {
     content
       .overlay(
         LifeCycleController.Representable(handler: handler)
+            .frame(width: .zero, height: .zero)
       )
   }
 }
