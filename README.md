@@ -4,5 +4,5 @@ Blog: [Link](https://doing-programming.tistory.com/entry/SwiftUI-SwiftUI-%ED%99%
 You can use UIViewController Life Cycle in SwiftUI
 
 # Concept
-![](src/concept.jpg)
+![](src/concept.png)
 
